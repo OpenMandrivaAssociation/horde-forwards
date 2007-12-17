@@ -16,7 +16,6 @@ Source2:	%{module}-horde.conf.bz2
 URL:		http://www.horde.org/%{module}/
 Requires:	horde >= 3.0
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Forwards is a Horde module for setting user e-mail forwards with support for
