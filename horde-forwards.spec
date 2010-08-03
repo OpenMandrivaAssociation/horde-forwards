@@ -1,7 +1,7 @@
 %define	module	forwards
 %define	name	horde-%{module}
 %define	version	3.1
-%define	release	%mkrel 5
+%define	release	%mkrel 6
 
 %define _requires_exceptions pear(Horde.*)
 
@@ -15,7 +15,6 @@ URL:		http://www.horde.org/%{module}/
 Source0:	ftp://ftp.horde.org/pub/%{module}/%{module}-h3-%{version}.tar.bz2
 Requires:	horde >= 3.3.5
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Forwards is a Horde module for setting user e-mail forwards with support for
