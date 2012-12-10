@@ -122,3 +122,74 @@ rm -rf %{buildroot}
 %config(noreplace) %{_sysconfdir}/horde/%{module}
 %{_datadir}/horde/%{module}
 
+
+
+%changelog
+* Sun Aug 08 2010 Thomas Spuhler <tspuhler@mandriva.org> 3.2.1-1mdv2011.0
++ Revision: 567487
+- Updated to version 3.2.1
+- added version 3.2.1
+
+* Tue Aug 03 2010 Thomas Spuhler <tspuhler@mandriva.org> 3.1-6mdv2011.0
++ Revision: 565210
+- Increased release for rebuild
+
+* Mon Jan 18 2010 Guillaume Rousse <guillomovitch@mandriva.org> 3.1-5mdv2010.1
++ Revision: 493343
+- rely on filetrigger for reloading apache configuration begining with 2010.1, rpm-helper macros otherwise
+- restrict default access permissions to localhost only, as per new policy
+
+* Sun Sep 20 2009 Guillaume Rousse <guillomovitch@mandriva.org> 3.1-3mdv2010.0
++ Revision: 446056
+- new setup (simpler is better)
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 3.1-2mdv2010.0
++ Revision: 437881
+- rebuild
+
+* Thu Mar 19 2009 Guillaume Rousse <guillomovitch@mandriva.org> 3.1-1mdv2009.1
++ Revision: 358196
+- update to new version 3.1
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 3.0-5mdv2009.0
++ Revision: 246877
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Dec 18 2007 Guillaume Rousse <guillomovitch@mandriva.org> 3.0-3mdv2008.1
++ Revision: 132441
+- rebuild
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Fri Aug 25 2006 Guillaume Rousse <guillomovitch@mandriva.org> 3.0-2mdv2007.0
+- Rebuild
+
+* Mon Mar 13 2006 Guillaume Rousse <guillomovitch@mandriva.org> 3.0-1mdk
+- new version
+- %%mkrel
+
+* Thu Jun 30 2005 Guillaume Rousse <guillomovitch@mandriva.org> 2.2.2-1mdk 
+- new version
+- better fix encoding
+- spec cleanup
+
+* Fri Feb 18 2005 Oden Eriksson <oeriksson@mandrakesoft.com> 2.2.1-3mdk
+- spec file cleanups, remove the ADVX-build stuff
+- strip away annoying ^M
+
+* Fri Jan 14 2005 Guillaume Rousse <guillomovitch@mandrake.org> 2.2.1-2mdk 
+- top-level is now /var/www/horde/forwards
+- config is now in /etc/horde/forwards
+- other non-accessible files are now in /usr/share/horde/forwards
+- no more apache configuration
+- rpmbuildupdate aware
+- spec cleanup
+
+* Sat Sep 04 2004 Guillaume Rousse <guillomovitch@mandrake.org> 2.2.1-1mdk 
+- first mdk release
+
