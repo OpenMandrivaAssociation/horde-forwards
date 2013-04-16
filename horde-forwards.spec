@@ -1,13 +1,8 @@
 %define	module	forwards
-%define	name	horde-%{module}
-%define	version	3.2.1
-%define release:	3
 
-%define _requires_exceptions pear(Horde.*)
-
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		horde-%{module}
+Version:	3.2.1
+Release:	3
 Summary:	The Horde forwards management application
 License:	GPL
 Group:		System/Servers
