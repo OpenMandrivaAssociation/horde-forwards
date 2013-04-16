@@ -1,7 +1,7 @@
 %define	module	forwards
 %define	name	horde-%{module}
 %define	version	3.2.1
-%define	release	%mkrel 1
+%define release:	2
 
 %define _requires_exceptions pear(Horde.*)
 
@@ -104,15 +104,7 @@ popd
 %clean
 rm -rf %{buildroot}
 
-%post
-%if %mdkversion < 201010
-%_post_webapp
-%endif
 
-%postun
-%if %mdkversion < 201010
-%_postun_webapp
-%endif
 
 %files
 %defattr(-,root,root)
