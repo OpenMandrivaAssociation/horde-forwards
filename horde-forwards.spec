@@ -2,7 +2,7 @@
 
 Name:		horde-%{module}
 Version:	3.2.1
-Release:	4
+Release:	5
 Summary:	The Horde forwards management application
 License:	GPL
 Group:		System/Servers
